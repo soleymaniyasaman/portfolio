@@ -47,8 +47,8 @@ function Header() {
           <span className={`${letterClass} _14`}>'</span>
           <span className={`${letterClass} _15 `}>m</span>{" "}
           <div className="home-logo">
-            <div className="logo">
-              <span>y</span>
+            <div className="logo switch__color-logo">
+              <span className="switch__color-span">y</span>
             </div>
           </div>
           <Blast

@@ -32,7 +32,6 @@
         height: 80px;
         border: none;
         border-radius: 23px;
-        background-color: #cc6c06;
         display: flex;
         align-items: center;
         position: relative;
@@ -43,21 +42,16 @@
             font-style: italic;
             font-weight: bold;
             font-size: 95px;
-            color: white;
             position: absolute;
             left: 16px;
             bottom: 20px;
         }
 
         &:hover {
-            background-color: white;
             animation: rubberBand 1s;
             animation-timing-function: all 250ms ease-in-out;
 
-            span {
-                color: #cc6c06;
-
-            }
+            span {}
         }
     }
 }

@@ -11,7 +11,7 @@ function Sidebar() {
       <div className="aside-wrapper">
         <Link to="/" className="logo-section">
           <div className="logo">
-            <span>y</span>
+            <span className="switch__color-brand">y</span>
           </div>
           <span className="switch__color">
             YASAMAN

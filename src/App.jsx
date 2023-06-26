@@ -1,12 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.scss";
 import { Home, About, Contact, ProjectPage, ErrorPage } from "./pages";
+import CursorAnimation from "./utils/CursorAnimation";
 import Sidebar from "./components/sidebar/Sidebar";
+
+import "./App.scss";
 
 function App() {
   return (
     <BrowserRouter>
+      <CursorAnimation />
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />}></Route>

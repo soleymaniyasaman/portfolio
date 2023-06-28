@@ -10,7 +10,6 @@ import "./App.scss";
 function App() {
   return (
     <BrowserRouter>
-      <CursorAnimation />
       <Sidebar />
       <ThemeTemplates />
       <Routes>
@@ -20,6 +19,7 @@ function App() {
         <Route path="/project" element={<ProjectPage />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
+      <CursorAnimation />
     </BrowserRouter>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // react-icons
-import { FiGrid, FiLinkedin, FiYoutube, FiFigma } from 'react-icons/fi'
+import { FiGrid, FiLinkedin, FiYoutube } from 'react-icons/fi'
 import { ImBlogger } from 'react-icons/im'
 import { VscProject } from 'react-icons/vsc'
 import {
@@ -15,16 +15,19 @@ import { RiContactsLine, RiReactjsLine } from 'react-icons/ri'
 import {
   SiFuturelearn,
   SiSass,
-  SiJquery,
-  SiExpress,
   SiRedux,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiChartdotjs,
+  SiSocketdotio,
+  SiMaterialdesign
 } from 'react-icons/si'
 
 import { GrGithub, GrTwitter, GrInstagram } from 'react-icons/gr'
 import { AiFillHtml5 } from 'react-icons/ai'
-import { DiCss3, DiMongodb } from 'react-icons/di'
+import { DiCss3 } from 'react-icons/di'
 import { IoLogoJavascript, IoLogoGameControllerB } from 'react-icons/io'
-import { FaNodeJs, FaGit } from 'react-icons/fa'
+import { FaGit } from 'react-icons/fa'
 
 // sidebar menu functionality
 const sideBarMenu = [
@@ -120,12 +123,22 @@ const skillSet = [
     spanText: 'BOOTSTRAP',
     url: '',
   },
-
   {
-    icon: <SiJquery className="skills-icon switch__color" />,
-    spanText: 'JQUERY',
-    url: '',
+    icon: <SiTailwindcss className="skills-icon switch__color" />,
+    spanText: 'TAILWIND CSS',
+    url: 'https://tailwindcss.com/',
   },
+  {
+    icon: <SiMaterialdesign className="skills-icon switch__color" />,
+    spanText: 'MATERIAL DESIGN',
+    url: 'https://m3.material.io/',
+  },
+  {
+    icon: <SiChartdotjs className="skills-icon switch__color" />,
+    spanText: 'CHART JS',
+    url: 'https://www.chartjs.org/',
+  },
+
   {
     icon: <FaGit className="skills-icon switch__color" />,
     spanText: 'GIT',
@@ -144,35 +157,25 @@ const skillSet = [
     url:
       'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started',
   },
-
   {
-    icon: <FaNodeJs className="skills-icon switch__color" />,
-    spanText: 'NODE',
+    icon: <SiNextdotjs className="skills-icon switch__color" />,
+    spanText: 'NEXT JS',
     url:
-      'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs',
+      'https://nextjs.org/',
+  },
+  {
+    icon: <SiSocketdotio className="skills-icon switch__color" />,
+    spanText: 'SOCKET IO',
+    url:
+      'https://socket.io/',
   },
 
-  {
-    icon: <DiMongodb className="skills-icon switch__color" />,
-    spanText: 'MONGO DB',
-    url: '',
-  },
-  {
-    icon: <SiExpress className="skills-icon switch__color" />,
-    spanText: 'EXPRESS JS',
-    url:
-      'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Express',
-  },
   {
     icon: <SiRedux className="skills-icon switch__color" />,
     spanText: 'Redux',
     url: 'https://redux.js.org/introduction/getting-started',
   },
-  {
-    icon: <FiFigma className="skills-icon switch__color" />,
-    spanText: 'Figma',
-    url: 'https://figma.com',
-  },
+
   {
     icon: <BsGoogle className="skills-icon switch__color" />,
     spanText: 'Googling',

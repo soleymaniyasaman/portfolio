@@ -4,6 +4,7 @@ import Blast from "../../components/BlastAnimation/Blast";
 import Fade from "react-reveal/Fade";
 import Reveal from "react-reveal/Reveal";
 import "./about.scss";
+import Cards from "../../components/skillsCards/Cards";
 
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -85,6 +86,7 @@ function About() {
             </Fade>
           </div>
         </article>
+        <Cards />
       </div>
     </>
   );

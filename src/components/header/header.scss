@@ -45,13 +45,12 @@
             position: absolute;
             left: 16px;
             bottom: 20px;
+            color: white;
         }
 
         &:hover {
             animation: rubberBand 1s;
             animation-timing-function: all 250ms ease-in-out;
-
-            span {}
         }
     }
 }

@@ -31,7 +31,7 @@ body {
     'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
   overflow-x: hidden;
   background: var(--primary-bg);
-  cursor: none;
+  // cursor: none;
 }
 
 // styling the  scrollbar
@@ -46,6 +46,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(128, 128, 128);
 }
+
 
 // add custom stylings to all some html elements
 p {
@@ -100,10 +101,10 @@ a {
   --sideBar-bg: #f1f1f1;
   --box-shadow: 0 0 15px 0px #0808087a;
   --light-bg: #504d4b;
-  --typical-color: rgb(40, 40, 39);
+  --typical-color: #98a1a7;
   --theme-wrapper-bg: #ffffff;
   --primary-text-color: #151414;
-  --hover-color: #1b1b1b;
+  --hover-color: #98a1a7;
 }
 
 // wrapper for all html elements

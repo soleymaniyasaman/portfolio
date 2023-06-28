@@ -28,6 +28,7 @@ const CursorAnimation = () => {
             window.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
+
 };
 
 export default CursorAnimation;

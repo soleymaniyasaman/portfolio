@@ -23,17 +23,22 @@ function Contact() {
     email: "",
     subject: "",
   });
+
+  // select all the input with useRef Hook
   const EmailRef = useRef(null);
   const TextAreaRef = useRef(null);
   const MessageRef = useRef(null);
   const form = useRef(null);
 
+  // Handle change function
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValidInput((preValue) => {
       return { ...preValue, [name]: value };
     });
   };
+
+  // Error function
   const setError = (inputRef) => {
     if (inputRef.current.parentElement.classList.contains("success")) {
       inputRef.current.parentElement.classList.remove("success");
@@ -42,6 +47,7 @@ function Contact() {
     }
   };
 
+  // Success function
   const setSuccess = (inputRef) => {
     if (inputRef.current.parentElement.classList.contains("error")) {
       inputRef.current.parentElement.classList.remove("error");
@@ -50,34 +56,52 @@ function Contact() {
     }
   };
 
-  const showMessage = (message) => {
+  // show Message function
+  const showMessage = (message, updateColor) => {
     const messageContent = document.createElement("div");
     messageContent.textContent = message;
     messageContent.classList.add("div-content");
     MessageRef.current.prepend(messageContent);
+    messageContent.style.backgroundColor = updateColor;
 
-    MessageRef.current.style.transform = `translateX(${0}%)`;
+    MessageRef.current.style.transform = `translateX(${"0"}%)`;
+    MessageRef.current.style.visibility = "visible";
     setTimeout(() => {
       messageContent.classList.add("hide");
-      messageContent.addEventListener("transitionend", () =>
-        messageContent.remove()
-      );
-
+      messageContent.addEventListener("transitionend", () => {
+        messageContent.remove();
+      });
+      messageContent.style.transform = `translateX(${"0"}%)`;
       EmailRef.current.parentElement.classList.remove("error");
-      EmailRef.current.parentElement.classList.remove("success");
-
       TextAreaRef.current.parentElement.classList.remove("error");
+      EmailRef.current.parentElement.classList.remove("success");
       TextAreaRef.current.parentElement.classList.remove("success");
     }, 5000);
   };
 
+  // Submit Button Function
   const onSubmit = (e) => {
     e.preventDefault();
     const { email, message } = validInput;
+    const pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     if (!email && !message) {
       setError(EmailRef);
       setError(TextAreaRef);
-      showMessage("Please fill in the required input");
+      showMessage("Please fill in the required inputs");
+    } else if (!email && message) {
+      setError(EmailRef);
+
+      showMessage("Ooops! Email can't be empty");
+    } else if (!email.match(pattern)) {
+      setError(EmailRef);
+      showMessage("Ooops! Email not valid");
+    } else if (!message && email.match(pattern)) {
+      setError(TextAreaRef);
+
+      showMessage("Leave a message please!");
+    } else if (email && !message) {
+      setError(TextAreaRef);
+      showMessage("Oooops! Message can't be empty");
     } else if (email && message) {
       emailjs.sendForm(
         "service_kotoahe",
@@ -87,7 +111,7 @@ function Contact() {
       );
       setSuccess(EmailRef);
       setSuccess(TextAreaRef);
-      showMessage("Message sent successfully");
+      showMessage("Message sent successfully", "green");
     }
     setValidInput({
       name: "",

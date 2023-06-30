@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import myCV from "../../assets/myCV.pdf";
-import Blast from "../../components/BlastAnimation/Blast";
 import Fade from "react-reveal/Fade";
 import Reveal from "react-reveal/Reveal";
 import "./about.scss";
-import Cards from "../../components/skillsCards/Cards";
+import { Cards, Blast } from "../../components";
 
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -27,7 +26,7 @@ function About() {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animation-hover");
-    }, 4500);
+    }, 3000);
   }, []);
 
   return (

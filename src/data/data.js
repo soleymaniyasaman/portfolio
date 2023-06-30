@@ -46,16 +46,7 @@ const sideBarMenu = [
     icon: <VscProject className="link-icon" />,
     url: '/project',
   },
-  {
-    text: 'Blog',
-    icon: (
-      <ImBlogger
-        className="link-icon"
-        style={{ fill: 'current', stroke: 'current' }}
-      />
-    ),
-    url: '/blog',
-  },
+
   {
     text: 'Contacts',
     icon: <RiContactsLine className="link-icon" />,

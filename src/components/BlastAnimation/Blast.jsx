@@ -10,7 +10,6 @@ function Blast({ letterClass, arrayStr, letterIndex }) {
             key={index + letter}
             className={`${letterClass} _${index + letterIndex}`}
           >
-            {console.log(index + letterIndex)}
             {letter}
           </span>
         );

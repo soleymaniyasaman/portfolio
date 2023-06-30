@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import About from "../about/About";
 import ProjectPage from "../project/ProjectPage";
+import Contact from "../contact/Contact";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <About />
       </section>
       <ProjectPage />
+      <Contact />
     </>
   );
 }

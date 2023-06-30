@@ -20,6 +20,9 @@ const CursorAnimation = () => {
             if (document.getElementsByClassName("loader-container").length > 50) {
                 document.body.removeChild(toAppend);
             }
+            setTimeout(() => {
+                parentDiv.remove()
+            }, 1000);
         };
 
         window.addEventListener("mousemove", handleMouseMove);

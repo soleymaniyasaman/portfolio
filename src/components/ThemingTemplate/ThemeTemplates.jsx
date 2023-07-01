@@ -4,7 +4,7 @@ import { BsMoonStars, BsFillSunFill } from "react-icons/bs";
 import { GlobalContext } from "../../hooks/contextAPI";
 
 import { BsXLg } from "react-icons/bs";
-import "./themeTemplate.scss";
+import "./themetemplate.scss";
 
 const ThemeTemplates = React.memo(() => {
   const {

@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import { projects } from "./index";
 import { Project, Blast } from "../../components";
-import "./projectPage.scss";
+import "./projectpage.scss";
 
 const ProjectPage = () => {
   const [letterClass, setLetterClass] = React.useState("text-animate");

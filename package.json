@@ -2,6 +2,7 @@
   "name": "create-react-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://soleymaniyasaman.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@ramonak/react-progress-bar": "^5.0.1",
@@ -25,12 +26,15 @@
     "react-spinners": "^0.13.3",
     "sass": "^1.53.0",
     "swiper": "^8.3.1"
+
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

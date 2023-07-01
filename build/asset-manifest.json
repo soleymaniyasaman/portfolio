@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.93e57c92.css",
+    "main.js": "/portfolio/static/js/main.ff8fb299.js",
+    "static/media/gericht.png": "/portfolio/static/media/gericht.d800d24737ff0bb5de73.png",
+    "static/media/gpt3.png": "/portfolio/static/media/gpt3.9bf6532fe9b6003ff584.png",
+    "static/media/myCV.pdf": "/portfolio/static/media/myCV.dfa7082710c0afc6b8ba.pdf",
+    "static/media/huddle.png": "/portfolio/static/media/huddle.083f04423be10fc36cc1.png",
+    "static/media/countryAPI.png": "/portfolio/static/media/countryAPI.5c31f165be344cbf716d.png",
+    "index.html": "/portfolio/index.html",
+    "main.93e57c92.css.map": "/portfolio/static/css/main.93e57c92.css.map",
+    "main.ff8fb299.js.map": "/portfolio/static/js/main.ff8fb299.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e57c92.css",
+    "static/js/main.ff8fb299.js"
+  ]
+}

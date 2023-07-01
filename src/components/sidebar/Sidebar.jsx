@@ -30,7 +30,7 @@ const Sidebar = React.memo(() => {
             className="close-btn switch__color"
           />
           <Link
-            to="/"
+            to="/portfolio"
             style={{
               display: "flex",
               flexDirection: "column",

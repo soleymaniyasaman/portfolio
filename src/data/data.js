@@ -32,23 +32,23 @@ const sideBarMenu = [
   {
     text: 'Home',
     icon: <FiGrid className="link-icon" />,
-    url: '/',
+    url: '/portfolio',
   },
   {
     text: 'About',
     icon: <BsPersonLinesFill className="link-icon" />,
-    url: '/about',
+    url: '/portfolio/about',
   },
   {
     text: 'Projects',
     icon: <VscProject className="link-icon" />,
-    url: '/project',
+    url: '/portfolio/project',
   },
 
   {
     text: 'Contacts',
     icon: <RiContactsLine className="link-icon" />,
-    url: '/contact',
+    url: '/portfolio/contact',
   },
 
 ]

@@ -46,32 +46,27 @@ function About() {
             </h2>
             <Fade bottom>
               <p>
-                Developer with 3 years of experience implementing React,
-                JavaScript, HTML/CSS to improve Front-end development technology
-                in UI of single-page sites. Interested in developing complex
-                solutions, creating responsive designs possessing creative
-                thinking. Prepared companies to develop goals and increased
-                usage of projects by 70%
+                I’m an ambitious Front-End Developer who's passionate about
+                coding and looking for a role in the established IT company with
+                the opportunity to work with the latest technologies on
+                challenging and diverse projects.
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                Developer with 3 years of experience implementing React,
-                JavaScript, HTML/CSS to improve Front-end development technology
-                in UI of single-page sites. Interested in developing complex
-                solutions, creating responsive designs possessing creative
-                thinking. Prepared companies to develop goals and increased
-                usage of projects by 70%
+                I’m from Iran but currently living in Turkey. I’m a freelancer
+                who loves building cool UI effects, dynamic webpages with
+                amazing animations and creating intuitive, dynamic user
+                experiences. I also love to reach out to new opportunities
+                across the globe that will enhance my skills and get the
+                opportunity to work with other programmers as well
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                Developer with 3 years of experience implementing React,
-                JavaScript, HTML/CSS to improve Front-end development technology
-                in UI of single-page sites. Interested in developing complex
-                solutions, creating responsive designs possessing creative
-                thinking. Prepared companies to develop goals and increased
-                usage of projects by 70%
+                If I could say one of the most interesting things about me, it's
+                the fact that I'm always ready for any challenges that comes to
+                my way. Here's my CV below for more details.
               </p>
             </Fade>
             <Fade left>

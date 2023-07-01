@@ -8,7 +8,7 @@ const ProjectPage = () => {
   const [letterClass, setLetterClass] = React.useState("text-animate");
   React.useEffect(() => {
     setTimeout(() => {
-      setLetterClass("text-animate-hover");
+      setLetterClass("text-animation-hover");
     }, 3000);
   }, []);
 

@@ -1,8 +1,7 @@
 import React from 'react'
 
 // react-icons
-import { FiGrid, FiLinkedin, FiYoutube } from 'react-icons/fi'
-import { ImBlogger } from 'react-icons/im'
+import { FiGrid, FiLinkedin } from 'react-icons/fi'
 import { VscProject } from 'react-icons/vsc'
 import {
   BsBootstrapFill,
@@ -13,7 +12,6 @@ import {
 
 import { RiContactsLine, RiReactjsLine } from 'react-icons/ri'
 import {
-  SiFuturelearn,
   SiSass,
   SiRedux,
   SiNextdotjs,
@@ -23,10 +21,10 @@ import {
   SiMaterialdesign
 } from 'react-icons/si'
 
-import { GrGithub, GrTwitter, GrInstagram } from 'react-icons/gr'
+import { GrGithub, GrInstagram } from 'react-icons/gr'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
-import { IoLogoJavascript, IoLogoGameControllerB } from 'react-icons/io'
+import { IoLogoJavascript } from 'react-icons/io'
 import { FaGit } from 'react-icons/fa'
 
 // sidebar menu functionality
@@ -52,38 +50,21 @@ const sideBarMenu = [
     icon: <RiContactsLine className="link-icon" />,
     url: '/contact',
   },
-  {
-    text: 'Tutorials',
-    icon: <SiFuturelearn className="link-icon" />,
-    url: '/tutorial',
-  },
-  {
-    text: 'Gaming',
-    icon: <IoLogoGameControllerB className="link-icon" />,
-    url: '/gaming',
-  },
+
 ]
 // social media icons
 const socialIcons = [
   {
     icon: <GrGithub className="icon switch__color" />,
-    url: 'https://github.com/Almarex-Web-Dev ',
-  },
-  {
-    icon: <FiYoutube className="icon switch__color" />,
-    url: 'https://www.youtube.com/c/AlmarexWebDev',
-  },
-  {
-    icon: <GrTwitter className="icon switch__color" />,
-    url: 'https://twitter.com/almarexwebdev',
+    url: 'https://github.com/soleymaniyasaman ',
   },
   {
     icon: <GrInstagram className="icon switch__color" />,
-    url: 'https://www.instagram.com/almarexwebdev1/',
+    url: 'https://instagram.com/_yas__sol__?igshid=MzNlNGNkZWQ4Mg==',
   },
   {
     icon: <FiLinkedin className="icon switch__color" />,
-    url: 'https://www.linkedin.com/in/almarex/',
+    url: 'https://www.linkedin.com/in/yasaman-soleymanizade/',
   },
 ]
 // skills card

@@ -2,7 +2,7 @@
   "name": "create-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "portfolio",
+  "homepage": "https://soleymaniyasaman.github.io/portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@ramonak/react-progress-bar": "^5.0.1",

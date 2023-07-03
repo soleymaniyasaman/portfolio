@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home, About, Contact, ProjectPage, ErrorPage } from "./pages";
 import { Sidebar, ThemeTemplates } from "./components";
 
@@ -9,7 +9,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <BrowserRouter basename="portfolio">
+    <HashRouter>
       <Sidebar />
       <ThemeTemplates />
       <Routes>
@@ -20,7 +20,7 @@ function App() {
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
       <CursorAnimation />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -10,7 +10,9 @@ const AppProvider = ({ children }) => {
     // light mode and dark mode functionality
     useEffect(() => {
         const currentMode = localStorage.getItem("mode")
-        setColorMode(currentMode)
+        if (currentMode) {
+            setColorMode(currentMode)
+        }
     }, []);
 
     const handleMode = (mode) => {
@@ -22,6 +24,7 @@ const AppProvider = ({ children }) => {
         const currentTemp = localStorage.getItem("temp")
         setChangeTemp(currentTemp)
     }, []);
+
     const handleTemp = (temp) => {
         setChangeTemp(temp)
         localStorage.setItem("temp", temp)

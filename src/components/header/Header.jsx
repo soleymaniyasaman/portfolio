@@ -63,7 +63,7 @@ function Header() {
             letterIndex={22}
           />
         </h1>
-        <Link to={"/portfolio/contact"} className="contact-button">
+        <Link to={"/contact"} className="contact-button">
           <div>
             <span className="bg switch__bg"></span>
             <span className="base switch__border-color"></span>

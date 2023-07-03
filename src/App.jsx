@@ -9,14 +9,14 @@ import "./App.scss";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="portfolio">
       <Sidebar />
       <ThemeTemplates />
       <Routes>
-        <Route path="/portfolio" element={<Home />}></Route>
-        <Route path="/portfolio/about" element={<About />}></Route>
-        <Route path="/portfolio/contact" element={<Contact />}></Route>
-        <Route path="/portfolio/project" element={<ProjectPage />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/project" element={<ProjectPage />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
       <CursorAnimation />

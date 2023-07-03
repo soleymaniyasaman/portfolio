@@ -24,6 +24,10 @@
   --theme-wrapper-bg: #252423;
   --primary-text-color: #878787;
   --hover-color: #fff;
+  --input-color: #2b2b2b;
+  --input-fill-color: #8d8d8d;
+  --map-content: rgba(0, 0, 0, 0.744);
+
 }
 
 body {
@@ -105,6 +109,9 @@ a {
   --theme-wrapper-bg: #ffffff;
   --primary-text-color: #151414;
   --hover-color: #98a1a7;
+  --input-color: #98a1a7;
+  --input-fill-color: #504d4b;
+  --map-content: rgba(0, 0, 0, 0.44);
 }
 
 // wrapper for all html elements

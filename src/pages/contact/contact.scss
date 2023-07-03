@@ -29,11 +29,11 @@ textarea {
     height: 50px;
     outline: none;
     border: none;
-    box-shadow: 0 0 0px 1000px #2b2b2b inset;
-    background: #2b2b2b;
+    box-shadow: 0 0 0px 1000px var(--input-color) inset;
+    background: var(--input-color);
     padding: 0 20px;
     margin-bottom: 10px;
-    -webkit-text-fill-color: #8d8d8d;
+    -webkit-text-fill-color: var(--input-fill-color);
     font-family: sans-serif;
     font-size: 0.975rem;
 }
@@ -155,7 +155,7 @@ button.contact-button:hover .message-deliver {
 }
 
 .map-content {
-    background-color: rgba(0, 0, 0, 0.744);
+    background-color: var(--map-content);
     color: #fff;
     position: absolute;
     top: 40px;

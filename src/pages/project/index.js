@@ -3,11 +3,10 @@ import { TbWorld } from 'react-icons/tb'
 
 // images from the asset folder in the image file
 import {
-  wordleClone,
-  gpt3,
-  gericht,
-  huddle,
-  restCOuntry,
+  ticket,
+  nextjs,
+  invitation,
+  products,
 } from '../../assets/images'
 
 // projects' id, name, stacks, icon and url data
@@ -26,7 +25,7 @@ export const projects = [
       icon: <TbWorld />,
       url: 'https://soleymaniyasaman.github.io/ticket/',
     },
-    imgUrl: wordleClone,
+    imgUrl: ticket,
   },
   {
     id: 2,
@@ -41,14 +40,13 @@ export const projects = [
       icon: <TbWorld />,
       url: 'https://soleymaniyasaman.github.io/Next_first_page/',
     },
-    imgUrl: gericht,
+    imgUrl: nextjs,
   },
   {
     id: 3,
     name: 'Invitation Card',
     desc: 'An online invitation card that comprises information of the enterprise',
     stack: 'React JS, TailwindCSS',
-    imgUrl: gpt3,
 
     gitHubUrl: {
       icon: <GrGithub />,
@@ -58,6 +56,7 @@ export const projects = [
       icon: <TbWorld />,
       url: 'https://soleymaniyasaman.github.io/invitation-card/',
     },
+    imgUrl: invitation,
   },
   {
     id: 4,
@@ -71,7 +70,8 @@ export const projects = [
     website: {
       icon: <TbWorld />,
       url: 'https://soleymaniyasaman.github.io/Product-list/',
-    }
+    },
+    imageUrl: products,
   }
 
   // {

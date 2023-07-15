@@ -71,7 +71,7 @@ export const projects = [
       icon: <TbWorld />,
       url: 'https://soleymaniyasaman.github.io/Product-list/',
     },
-    imageUrl: products,
+    imgUrl: products,
   }
 
   // {
